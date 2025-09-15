@@ -47,10 +47,16 @@ if type == "distance":
         print(f"{value_distance} cm in m: {cm:.2f}")
     elif unit_distance == "m":
         m = value_distance
-        print(f"")
+        print(f"{value_distance} m in m: {m:.2f}")
     elif unit_distance == "km":
+        km = value_distance * 1000
+        print(f"{value_distance} km in m: {km:.2f}")
     elif unit_distance == "in":
+        inch = value_distance * 0.0254
+        print(f"{value_distance} in in m: {inch:.2f}")
     elif unit_distance == "ft":
+        ft = value_distance * 0.3048
+        print(f"{value_distance} ft in m: {ft:.2f}")
     else:
         print("Unsupported unit")
 
