@@ -40,12 +40,12 @@ type = str(input().strip())     #user chooses type of unit: distance, mass, spee
 if type == "distance":
     print("Please select one of the following to convert to meters: cm m km in ft: ") 
     unit_distance = str(input().strip())        #user chooses a unit within distance
-    print("Please input a value: ")
 
     if unit_distance not in ["cm", "m", "km", "in", "ft"]:
         print("Unsupported unit")
    
     else:
+        print("Please input a value: ")
         value_distance = float(input().strip())     #user inputs a value for conversion
         
         if unit_distance == "cm":       #cm conversion
@@ -72,12 +72,11 @@ if type == "distance":
 elif type == "mass":
     print("Please select one of the following to convert to grams: mg g kg lbs: ") 
     unit_mass = str(input().strip())        #user chooses unit within mass
-    print("Please input a value: ")
-   
     if unit_mass not in ["mg", "g", "kg", "lbs"]:
         print("Unsupported unit")
    
     else:
+        print("Please input a value: ")
         value_mass = float(input().strip())     #user inputs a value for conversion
        
         if value_mass < 0:         #no negative mass
@@ -103,12 +102,12 @@ elif type == "mass":
 elif type == "speed":
     print("Please select one of the following to convert to meters per second: m/s km/h ft/s mph: ") 
     unit_speed = str(input().strip())       #user chooses unit within speed
-    print("Please input a value: ")
    
     if unit_speed not in ["m/s", "km/h", "ft/s", "mph"]:
         print("Unsupported unit")
    
     else:
+        print("Please input a value: ")
         value_speed = float(input().strip())        #user inputs a value for conversion
        
         if unit_speed == "m/s":         #m/s conversion
@@ -131,12 +130,12 @@ elif type == "speed":
 elif type == "temperature":
     print("Please select one of the following to convert to Celsius: C F K: ") 
     unit_temp = str(input().strip())        #user chooses unit within temp
-    print("Please input a value: ")
    
     if unit_temp not in ["C", "F", "K"]:
         print("Unsupported unit")
    
     else:
+        print("Please input a value: ")
         value_temp = float(input().strip())     #user inputs a value for conversion
        
         if unit_temp == "C":        #C conversion
