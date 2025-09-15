@@ -34,7 +34,7 @@ print("Welcome to the SI units calculator!")
 
 #ask for type of unit
 print("Please input a type of unit that you would like to convert. Here are your options: \ndistance \nmass \nspeed \ntemperature\n")
-type = str(input())
+type = str(input())     #user chooses type of unit: distance, mass, speed, temp
 
 #user asks for distance
 if type == "distance":
